@@ -5,7 +5,7 @@ GPA = {}
 k = 0
 
 for i in list_students:
-    GPA[i] = (sum(grades[k])/len(grades[k])
+    GPA[i] = (sum(grades[k])/len(grades[k]))
     k = k + 1
 
 print(GPA)
