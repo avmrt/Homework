@@ -3,8 +3,9 @@ str = ''
 list_of_str = []
 
 
-def count_calls(calls):
-    calls = calls + 1
+def count_calls():
+   global calls
+   calls = calls + 1
 
 
 def string_info(str):
@@ -12,12 +13,12 @@ def string_info(str):
     strlow = str.lower()
     leng = len(str)
     result = (leng, strbig, strlow)
-    count_calls(calls)
+    count_calls()
     return result
 
 
 def is_contains(str, list_of_str):
-    count_calls(calls)
+    count_calls()
     newlist = [i.lower() for i in list_of_str]
     if str.lower() in newlist:
         return True
